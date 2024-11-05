@@ -24,7 +24,7 @@ class MultiApp:
             app=option_menu(
                 menu_title='Project',
                 options=['🏠Home','🐍Game','❓About Us❔',"📚Rule Book"],
-                icons=['house-fill','person-circle','person-circle'],
+                icons=['a','b','c','d']
                 default_index=0
             )
         if app=='🏠Home':
@@ -34,6 +34,7 @@ class MultiApp:
             apps=option_menu(
                 menu_title='Snake And Ladder',
                 options=["🐍Player vs Player",'🐍Player vs Computer'],
+                icons=['a','b']
                 default_index=0,
                 orientation='horizontal'
             )
