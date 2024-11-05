@@ -152,7 +152,7 @@ def run():
             with col3:
                 placeholder2=st.empty()
                 default_image = Image.open("def.jpeg")
-                placeholde2.image(default_image, use_column_width=True)
+                placeholder2.image(default_image, use_column_width=True)
                 uploaded_file = st.file_uploader("select the image for player 2")
                 if uploaded_file is not None:
                     image = Image.open(uploaded_file)
