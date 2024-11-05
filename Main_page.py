@@ -3,6 +3,8 @@ from streamlit_option_menu import option_menu
 import Home
 import snake_ladder_1
 import practice
+import rules
+
 
 import About_us
 st.set_page_config(
@@ -21,7 +23,7 @@ class MultiApp:
         with st.sidebar:
             app=option_menu(
                 menu_title='Project',
-                options=['Home','Game','About_us'],
+                options=['Home','Game','About Us',"Rule Book"],
                 icons=['house-fill','person-circle','person-circle'],
                 default_index=0
             )
@@ -41,6 +43,8 @@ class MultiApp:
                 practice.run()
         
 
-        if app=='About_us':
+        if app=='About Us':
             About_us.run()
+        if app="Rule Book":
+            rules.run()
     run()
