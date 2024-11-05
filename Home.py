@@ -18,7 +18,7 @@ def run():
         unsafe_allow_html=True
     )
 
-    img=Image.open("C:\\Users\\ANKIT KUMAR\\Downloads\\crown")
+    img=Image.open("crown.png")
     st.image(img,width=1000)
     st.write("""
 ## *You are born to win, but to be a winner, you must plan to win, prepare to win, and expect to win.*""")
