@@ -45,6 +45,6 @@ class MultiApp:
 
         if app=='About Us':
             About_us.run()
-        if app="Rule Book":
+        if app=="Rule Book":
             rules.run()
     run()
