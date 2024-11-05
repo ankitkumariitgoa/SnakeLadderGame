@@ -82,7 +82,7 @@ def run():
                 if button1 and st.session_state.turn == 1:
                     roll = random.randint(1, 6)
                     a = roll
-                    image=["C:\\Users\\ANKIT KUMAR\\Downloads\\face_1.png","C:\\Users\\ANKIT KUMAR\\Downloads\\face_2.png","C:\\Users\\ANKIT KUMAR\\Downloads\\face_3.png","C:\\Users\\ANKIT KUMAR\\Downloads\\face_4.png","C:\\Users\\ANKIT KUMAR\\Downloads\\face_5.png","C:\\Users\\ANKIT KUMAR\\Downloads\\face_6.png"]
+                    image=["face_1.png","face_2.png","face_3.png","face_4.png","face_5.png","face_6.png"]
                     lst=[]
                     for i in range(random.randint(1,4)):
                         random.shuffle(image)
@@ -93,7 +93,7 @@ def run():
                             img = Image.open(image_path)
                             placeholder.image(img)
                             time.sleep(0.1)
-                    placeholder.image(f"C:\\Users\\ANKIT KUMAR\\Downloads\\face_{roll}.png")    
+                    placeholder.image(f"face_{roll}.png")    
                     st.session_state.player1_position = move_player(st.session_state.player1_position, roll)
                     st.session_state.turn = 2
                     if st.session_state.player1_position == 100:
@@ -113,7 +113,7 @@ def run():
                     if st.session_state.turn == 2:
                         roll = random.randint(1, 6)
                         b = roll
-                        image=["C:\\Users\\ANKIT KUMAR\\Downloads\\face_1.png","C:\\Users\\ANKIT KUMAR\\Downloads\\face_2.png","C:\\Users\\ANKIT KUMAR\\Downloads\\face_3.png","C:\\Users\\ANKIT KUMAR\\Downloads\\face_4.png","C:\\Users\\ANKIT KUMAR\\Downloads\\face_5.png","C:\\Users\\ANKIT KUMAR\\Downloads\\face_6.png"]
+                        image=["face_1.png","face_2.png","face_3.png","face_4.png","face_5.png","face_6.png"]
                         lst=[]
                         for i in range(random.randint(1,4)):
                             random.shuffle(image)
@@ -124,7 +124,7 @@ def run():
                                 img = Image.open(image_path)
                                 placeholder.image(img)
                                 time.sleep(0.1)
-                        placeholder.image(f"C:\\Users\\ANKIT KUMAR\\Downloads\\face_{roll}.png")
+                        placeholder.image(f"face_{roll}.png")
                         st.session_state.computer_position = move_player(st.session_state.computer_position, roll)
                         st.session_state.turn = 1
                         if st.session_state.computer_position == 100:
