@@ -56,10 +56,9 @@ def run():
                         color = 'white'
                     ax.text(col + 0.5, 9 - row + 0.5, str(cell_num), va='center', ha='center',
                             bbox=dict(facecolor=color, edgecolor='black', boxstyle='round,pad=1'), fontsize=15)
-                    ax.plot([col, col + 1], [9 - row, 9 - row], color='black')
-                    ax.plot([col, col + 1], [10 - row, 10 - row], color='black')
-                    ax.plot([col, col], [9 - row, 10 - row], color='black')
-                    ax.plot([col + 1, col + 1], [9 - row, 10 - row], color='black')
+            for i in range(11):
+                ax.axhline(i,color='black')
+                ax.axvline(i,color='black')
 
             #Drawing snakes
             for start, end in snakes.items():
